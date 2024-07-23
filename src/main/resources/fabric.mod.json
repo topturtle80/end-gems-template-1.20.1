@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "endgems",
+	"version": "${version}",
+	"name": "End Gems",
+	"description": "Adds a alternitive to netherite while making netherite  harder to obtain!",
+	"authors": [
+		"NaruROck_!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/endgems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.narurock.endgems.EndGems"
+		],
+		"client": [
+			"net.narurock.endgems.EndGemsClient"
+		],
+		"fabric-datagen": [
+			"net.narurock.endgems.EndGemsDataGenerator"
+		]
+	},
+	"mixins": [
+		"endgems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
